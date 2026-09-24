@@ -325,7 +325,7 @@ def main():
     parser.add_argument(
         "--adjustable",
         type=str,
-        default="Tano_in,RHano_in,Pano_in,STC_ano,XH2_dry,Tcat_in,RHcat_in,Pcat_in,STC_cat,TCL_in,FR_CL,I",
+        default="Tano_in,RHano_in,Pano_in,STC_ano,XH2_dry,Tcat_in,RHcat_in,Pcat_in,STC_cat,TCL_in,TCL_out,I",
         help="Comma-separated feature names to optimize.",
     )
     parser.add_argument("--artifact-dir", type=Path, default=None)

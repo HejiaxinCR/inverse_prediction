@@ -12,8 +12,7 @@ BASE_FEATURE_NAMES = [
     "Pcat_in",
     "STC_cat",
     "TCL_in",
-    # "TCL_out",
-    "FR_CL",
+    "TCL_out",
     "I",
 ]
 REFERENCE_FEATURE_NAMES = [

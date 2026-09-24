@@ -27,7 +27,6 @@ DEFAULT_TRAINING_FEATURE_BOUNDS = {
         "STC_cat": 1.6010429682377392,
         "TCL_in": 50.020574883526699,
         "TCL_out": 50.452187279321038,
-        "FR_CL": 0.010115377140287899,
         "I": 30.15526482450781,
         "RH_ano_out_maxlim": 0.35947634371448461,
         "RH_cat_out_maxlim": 0.53507449800982676,
@@ -44,7 +43,6 @@ DEFAULT_TRAINING_FEATURE_BOUNDS = {
         "STC_cat": 4.197819934538062,
         "TCL_in": 67.162501263812572,
         "TCL_out": 91.226090036546438,
-        "FR_CL": 0.19994329640460581,
         "I": 499.88146398417359,
         "RH_ano_out_maxlim": 1.0,
         "RH_cat_out_maxlim": 1.0,
@@ -87,10 +85,10 @@ def calculate_rh_outlet_reference(row):
     xh2_dry = row["XH2_dry"]
     current = row["I"]
 
-    t_ano_out = row["TCL_in"]
+    t_ano_out = row["TCL_out"]
     t_cat_in = row["Tcat_in"]
     rh_cat_in = row["RHcat_in"]
-    t_cat_out = row["TCL_in"]
+    t_cat_out = row["TCL_out"]
     stc_ano = row["STC_ano"]
     stc_cat = row["STC_cat"]
 
