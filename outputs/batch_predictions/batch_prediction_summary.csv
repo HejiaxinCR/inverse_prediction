@@ -1,0 +1,2 @@
+input_csv,output_csv,rows,predicted_rows,skipped_rows
+C:\Users\EHI2SGH\OneDrive - Bosch Group\PEMFC\inverse_prediction\data\opcon_V1_83p1_300p8_480p8_converted.csv,C:\Users\EHI2SGH\OneDrive - Bosch Group\PEMFC\inverse_prediction\outputs\batch_predictions\opcon_predictions.csv,46,46,0
