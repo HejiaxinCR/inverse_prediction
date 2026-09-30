@@ -85,7 +85,9 @@ def calculate_rh_outlet_reference(row):
     xh2_dry = row["XH2_dry"]
     current = row["I"]
 
-    t_ano_out = row["TCL_out"]
+    # Align with the reference RH calculation used for the current surrogate:
+    # anode outlet proxy uses TCL_in; cathode outlet proxy uses TCL_out.
+    t_ano_out = row["TCL_in"]
     t_cat_in = row["Tcat_in"]
     rh_cat_in = row["RHcat_in"]
     t_cat_out = row["TCL_out"]
